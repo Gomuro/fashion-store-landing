@@ -33,8 +33,9 @@ header {
 }
 
 /* Style the logo */
-.logo img {
-  width: 100px; /* Adjust as needed */
+.logo-text {
+  font-size: 24px;
+  max-width: 100%; /* Adjust as needed */
 }
 
 /* Style the navigation menu */
@@ -54,7 +55,8 @@ nav a {
 
 /* Style the contact information */
 .contact-info {
-  text-align: right;
+  font-size: 12px;
+  text-align: center;
 }
 
 /* Add hover effect to navigation links */
@@ -77,10 +79,8 @@ nav a:hover {
   align-items: center;
 }
 
-
-
 .cta {
-  max-width: 600px;
+  max-width: 60%;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
@@ -220,6 +220,7 @@ nav a:hover {
 
 .testimonial {
   background-color: var(--supporting-color-1);
+  max-width: 85%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -768,76 +769,254 @@ footer {
   margin: 0; /* Remove default margins */
 }
 
-
 /* Styling for the success message */
 .success-message {
-    background-color: #4CAF50; /* Green background color */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 18px;
-    position: relative;
-    animation: fadeIn 1s ease-in 1;
+  background-color: #4caf50; /* Green background color */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  animation: fadeIn 1s ease-in 1;
 }
 
 /* Define the fadeIn animation */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Define the slideDown animation */
 @keyframes slideDown {
-    from {
-        transform: translateY(-50px);
-    }
-    to {
-        transform: translateY(0);
-    }
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .success-message {
-        font-size: 16px;
-    }
+  .success-message {
+    font-size: 16px;
+  }
 }
-
 
 /* Add this CSS to your existing stylesheet or create a new one */
 
 #productAddedModal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
 }
 
 #productAddedModal .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.5s;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Header */
+
+/* Reduced the logo size for mobile screens */
+@media screen and (max-width: 425px) {
+  .logo-text {
+    font-size: 17px; /* Adjusted the logo width for mobile */
+  }
+}
+
+/* Navigation Menu */
+
+/* Made the navigation menu responsive */
+@media screen and (max-width: 425px) {
+  /* Show the navigation menu when the menu icon is clicked */
+  nav ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+  }
+
+  /* Adjust menu items for mobile screens */
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    text-align: right;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav li {
+    margin-right: 0;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 20px;
+  }
+}
+
+/* Contact Information */
+
+/* Centered the contact info and added top margin for better alignment on mobile */
+@media screen and (max-width: 425px) {
+  .contact-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Products Section */
+
+/* Adjust the size and spacing of product items for mobile */
+@media screen and (max-width: 425px) {
+  .product {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product h3 {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .add-to-cart {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+
+/* Footer */
+
+/* Reduced font sizes and spacing for footer links and icons on mobile */
+@media screen and (max-width: 425px) {
+  footer .legal a {
+    font-size: 1rem;
+  }
+
+  footer .social-icon {
+    font-size: 1.2rem;
+  }
+
+  footer .payment-icons img {
+    width: 30px;
+  }
+
+  footer .copyright {
+    font-size: 1rem;
+  }
+}
+
+/* Loading Animation */
+
+/* Made the loading animation centered and responsive to different screen sizes */
+.loading-animation {
+  /* Your existing styles for the loading animation here */
+}
+
+/* Cart Modal */
+
+/* Updated the styles for the cart modal to be more responsive */
+/* Ensured "Proceed to Checkout" and "Continue Shopping" buttons are touch-friendly */
+/* Styled the "X" button to be visible on mobile */
+@media screen and (max-width: 425px) {
+  .modal-content {
+    /* Your existing styles for the cart modal here */
+  }
+
+  .checkout-button,
+  .close-button {
+    /* Your existing styles for buttons here */
+    padding: 16px 24px; /* Increase padding for touch-friendly buttons */
+    font-size: 1.2rem; /* Increase font size for mobile buttons */
+  }
+}
+
+/* Additional Styles */
+
+/* Added styling for the success message modal */
+/* Centered and responsive to different screen sizes */
+@media screen and (max-width: 425px) {
+  .success-message {
+    /* Your styles for the success message here */
+  }
+}
+
+/* Testimonials/Reviews section */
+
+/* Reduced the font size for testimonial text on mobile screens */
+@media screen and (max-width: 425px) {
+  .testimonial-text {
+    font-size: 1rem; /* Adjusted the font size for mobile */
+  }
+
+  .customer-name {
+    font-size: 0.9rem; /* Adjusted the font size for mobile */
+  }
+}
+
+/* CTA section */
+
+/* Adjusted font sizes and spacing for mobile screens */
+@media screen and (max-width: 425px) {
+  .cta h1 {
+    font-size: 1.8rem; /* Adjusted the font size for mobile */
+    margin-bottom: 10px; /* Reduced the margin for mobile */
+  }
+
+  .cta p {
+    font-size: 1.2rem; /* Adjusted the font size for mobile */
+    margin-bottom: 20px; /* Reduced the margin for mobile */
+  }
+
+  .btn {
+    padding: 12px 24px; /* Adjusted button padding for mobile */
+    font-size: 1rem; /* Adjusted the font size for mobile */
+  }
 }
