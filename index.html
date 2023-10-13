@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>One-Page Web Store</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">
+                ChicWear 
+            </h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact-info">
+            <p>Email: example@example.com</p>
+            <p>Phone: +1-123-456-7890</p>
+        </div>
+        <!-- Cart Icon/Button -->
+        <a href="javascript:void(0);" id="openCartModal"><i class="fa-solid fa-cart-shopping"></i></a>
+
+    </header>
+    <section class="hero">
+        <div class="cta">
+            <h1>Welcome to Our Store</h1>
+            <p>Discover amazing products that suit your needs.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/1142212002/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%B5%D1%80%D0%B5%D0%B4-%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D0%BA%D0%B0%D0%BC%D0%B8-%D0%B2%D0%B8%D1%80%D1%96%D0%B7%D0%B0%D0%BB%D0%B8-%D1%87%D0%BE%D1%80%D0%BD%D1%83-%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D1%83-%D1%96%D0%B7%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D0%B0%D0%BD%D1%83-%D0%BD%D0%B0-%D0%B1%D1%96%D0%BB%D0%BE%D0%BC%D1%83-%D1%82%D0%BB%D1%96.jpg?s=612x612&w=0&k=20&c=_bUWju_MDLuQY92qVolQ3igcJIyIcTY1kKi7PiP26Vo=" alt="Product 1">
+                <h3>Product 1</h3>
+                <p class="description">Description of Product 1.</p>
+                <p class="price">$19.99</p>
+                <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/824820486/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%B8%D0%BD%D1%8F-%D0%BA%D0%B0%D1%80%D1%82%D0%B0%D1%82%D0%B5-%D0%BF%D0%BB%D1%96%D1%81%D0%B5-%D0%B1%D0%B0%D0%B2%D0%BE%D0%B2%D0%BD%D0%B0-%D0%BC%D1%96%D0%B4%D1%96-%D1%81%D0%BF%D1%96%D0%B4%D0%BD%D0%B8%D1%86%D1%8F-%D1%96%D0%B7%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D0%B0%D0%BD%D1%96.jpg?s=612x612&w=0&k=20&c=UDKZMZZIjkj5KtZqQYXwtC-IOIYJlLLQY8ROC9YxX9U=" alt="Product 2">
+                <h3>Product 2</h3>
+                <p class="description">Description of Product 2.</p>
+                <p class="price">$24.99</p>
+                <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/185011763/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B2%D0%B7%D1%83%D1%82%D1%82%D1%8F.jpg?s=612x612&w=0&k=20&c=9iwJAyAcoEtTUXllbcELXSwA0nHUCFjBa6F9TYOvHrQ=" alt="Product 3">
+                <h3>Product 3</h3>
+                <p class="description">Description of Product 3.</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart" data-product-id="3">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to our one-stop shop for high-quality products. At our store, we are committed to providing our customers with the best selection of products that meet their needs and expectations. Our mission is to make your shopping experience enjoyable and convenient. We are dedicated to offering top-notch customer service and ensuring your trust in our brand.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <img src="https://media.istockphoto.com/id/1034283778/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%83%D1%81%D0%BC%D1%96%D1%85%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%B9-%D0%B2%D0%B8%D0%BF%D0%B0%D0%B4%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9-%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D0%BA-%D1%8F%D0%BA%D0%B8%D0%B9-%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%94-%D0%BF%D0%BB%D0%B0%D0%BD%D1%88%D0%B5%D1%82.jpg?s=612x612&w=0&k=20&c=_pue9T2QLXF73qD0Tfo1o11aOA-6r81WOu1RIv-iVuI=" alt="Customer 1">
+                <p class="testimonial-text">"I love the products from this store! They are of excellent quality and the service is outstanding."</p>
+                <p class="customer-name">- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://media.istockphoto.com/id/1194465593/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%B0-%D1%8F%D0%BF%D0%BE%D0%BD%D0%BA%D0%B0-%D0%B2%D0%B8%D0%B3%D0%BB%D1%8F%D0%B4%D0%B0%D1%94-%D0%B2%D0%BF%D0%B5%D0%B2%D0%BD%D0%B5%D0%BD%D0%BE.jpg?s=612x612&w=0&k=20&c=mh7OYQQyP4lhENsP9DVWrSGMFpgK3pp05_Qebob4uVI=" alt="Customer 2">
+                <p class "testimonial-text">"Great selection of products and the prices are reasonable. I highly recommend this store!"</p>
+                <p class="customer-name">- Jane Smith</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://media.istockphoto.com/id/805011460/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82-%D0%B2%D0%BF%D0%B5%D0%B2%D0%BD%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D1%80%D1%96%D0%BB%D0%BE%D0%B3%D0%BE-%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D0%BA%D0%B0-%D1%8F%D0%BA%D0%B8%D0%B9-%D0%BF%D0%BE%D1%81%D0%BC%D1%96%D1%85%D0%B0%D1%94%D1%82%D1%8C%D1%81%D1%8F.jpg?s=612x612&w=0&k=20&c=jCR850FbHCu9K7guH3S4HpWhGAD1EHamjDy33MgHp7Q=" alt="Customer 3">
+                <p class="testimonial-text">"I've been a loyal customer for years. The customer service is top-notch, and the products are amazing!"</p>
+                <p class="customer-name">- Robert Johnson</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to get in touch with us. You can use the contact form below or reach us at the provided contact details.</p>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+            
+            <div class="business-address">
+                <h3>Business Address:</h3>
+                <p>123 Main Street, Suite 456</p>
+                <p>City, State 78901</p>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>Q: How can I place an order?</h3>
+            <p>A: Placing an order is easy. Simply browse our products, select the ones you like, and click the "Add to Cart" button. When you're ready to complete your purchase, go to your cart and follow the checkout process.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: What payment methods do you accept?</h3>
+            <p>A: We accept major credit cards, such as Visa, MasterCard, and American Express, as well as PayPal for secure and convenient payments.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: How long does shipping take?</h3>
+            <p>A: Shipping times may vary depending on your location and the selected shipping method. On average, standard shipping takes 3-5 business days, while expedited shipping options are available for faster delivery.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: Can I return or exchange a product?</h3>
+            <p>A: Yes, we have a hassle-free return and exchange policy. If you're not satisfied with your purchase, you can return or exchange it within 30 days of receipt. Please review our return policy for details.</p>
+        </div>
+    </section>
+    <section id="newsletter" class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest products, exclusive promotions, and more by subscribing to our newsletter. Join our community today!</p>
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <div id="successMessage" class="success-message" style="display: none;">
+            Thank you for subscribing to our newsletter!
+        </div>
+    </section>    
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-details">
+                        <h3>Product 1</h3>
+                        <p>Price: $19.99</p>
+                    </div>
+                    <div class="item-quantity">
+                        <label>Quantity:</label>
+                        <input type="number" value="1" min="1">
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <strong>Total: <span id="cartTotal">$0.00</span></strong>
+            </div>
+            <button id="checkoutButton" class="checkout-button">Proceed to Checkout</button>
+            <button id="closeButton" class="close-button">Continue Shopping</button>
+        </div>
+        
+    </div>
+    <div id="productAddedModal" class="modal" >
+        <div class="modal-content">
+            <span class="close" onclick="closeProductAddedModal()">&times;</span>
+            <h2>Product Added to Cart</h2>
+            <p id="addedProductMessage"></p>
+            <button class="close-button" onclick="closeProductAddedModal()">Close</button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="legal">
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#terms-conditions">Terms and Conditions</a>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="payment-icons">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+        </div>
+        <div class="copyright">
+            &copy; Your Company Name - 2023
+        </div>
+    </footer>
+    <div id="loading-animation" class="loading-animation">
+        <div class="spinner"></div>
+    </div>    
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
+    <script src="script.js"></script>   
+</body>
+</html>
