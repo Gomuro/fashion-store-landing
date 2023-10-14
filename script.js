@@ -240,3 +240,59 @@ function handleNewsletterForm(event) {
 // Add a submit event listener to the newsletter form
 const newsletterForm = document.getElementById("newsletterForm");
 newsletterForm.addEventListener("submit", handleNewsletterForm);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the "Products" link in the navigation menu
+    const productsLink = document.querySelector('a[href="#products"]');
+    const aboutUsLink = document.querySelector('a[href="#about"]')
+    const contactLink = document.querySelector('a[href="#contact"]')
+
+    // Get the target section (the products section)
+    const productsSection = document.getElementById('products');
+    const aboutUsSection=  document.getElementById('about');
+    const contactSection =   document.getElementById('contact');
+
+    // Add a click event listener to the "Products" link
+    productsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Scroll to the products section with smooth behavior
+        productsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Add a click event listener to the "about us" link
+    aboutUsLink.addEventListener('click', function(e){
+        e.preventDefault();
+
+        aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Add a click event listener to the "contact" link
+
+    contactLink.addEventListener('click', function(e){
+        e.preventDefault();
+
+        contactSection.scrollIntoView({ behavior: 'smooth'})
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const topButton = document.getElementById("back-to-top");
+    
+    // Show the button when the user scrolls down 20 pixels from the top
+    window.addEventListener("scroll", function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topButton.style.display = "block";
+        } else {
+            topButton.style.display = "none";
+        }
+    });
+
+    topButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
