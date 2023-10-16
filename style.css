@@ -975,10 +975,7 @@ footer {
 
 /* Loading Animation */
 
-/* Made the loading animation centered and responsive to different screen sizes */
-.loading-animation {
-  /* Your existing styles for the loading animation here */
-}
+
 
 /* Cart Modal */
 
@@ -986,10 +983,6 @@ footer {
 /* Ensured "Proceed to Checkout" and "Continue Shopping" buttons are touch-friendly */
 /* Styled the "X" button to be visible on mobile */
 @media screen and (max-width: 425px) {
-  .modal-content {
-    /* Your existing styles for the cart modal here */
-  }
-
   .checkout-button,
   .close-button {
     /* Your existing styles for buttons here */
@@ -1002,11 +995,6 @@ footer {
 
 /* Added styling for the success message modal */
 /* Centered and responsive to different screen sizes */
-@media screen and (max-width: 425px) {
-  .success-message {
-    /* Your styles for the success message here */
-  }
-}
 
 /* Testimonials/Reviews section */
 
